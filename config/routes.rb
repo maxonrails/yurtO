@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-
+  get 'pages/index' => 'pages#index'
   resources :medi_sessions
   delete '/logout', to: 'sessions#destroy'
   get '/auth/:provider/callback', to: 'sessions#create'
