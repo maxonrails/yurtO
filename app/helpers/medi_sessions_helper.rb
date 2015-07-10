@@ -1,0 +1,2 @@
+module MediSessionsHelper
+end

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Medi Sessions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Private</th>
+      <th>Time start</th>
+      <th>Time end</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @medi_sessions.each do |medi_session| %>
+      <tr>
+        <td><%= medi_session.private %></td>
+        <td><%= medi_session.time_start %></td>
+        <td><%= medi_session.time_end %>|</td>
+        <td><%= link_to 'Show', medi_session %>|</td>
+        <td><%= link_to 'Edit', edit_medi_session_path(medi_session) %>|</td>
+        <td><%= link_to 'X', medi_session, method: :delete, data: { confirm: 'Are you sure?' } %>|</td>
+        <td><%= link_to 'Join' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

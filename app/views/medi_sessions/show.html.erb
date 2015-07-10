@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Private:</strong>
+  <%= @medi_session.private %>
+</p>
+
+<p>
+  <strong>Time start:</strong>
+  <%= @medi_session.time_start %>
+</p>
+
+<p>
+  <strong>Time end:</strong>
+  <%= @medi_session.time_end %>
+</p>
+
+<%= link_to 'Edit', edit_medi_session_path(@medi_session) %> |
+<%= link_to 'Back', medi_sessions_path %>

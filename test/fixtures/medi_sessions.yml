@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  private: false
+  time_start: 2015-07-10 02:56:34
+  time_end: 2015-07-10 02:56:34
+
+two:
+  private: false
+  time_start: 2015-07-10 02:56:34
+  time_end: 2015-07-10 02:56:34

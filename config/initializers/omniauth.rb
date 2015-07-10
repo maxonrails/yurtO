@@ -2,7 +2,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 
 
   provider :google_oauth2, ENV["google_client_id"], ENV["google_client_secret"],
-           scope: 'profile', image_aspect_ratio: 'circle', image_size: 48, access_type: 'online', name: 'google'
+           scope: 'profile, email, hangout.av, plus.me, hangout.participants', image_aspect_ratio: 'circle', image_size: 48, access_type: 'online', name: 'google'
 
 
   OmniAuth.config.on_failure = Proc.new do |env|

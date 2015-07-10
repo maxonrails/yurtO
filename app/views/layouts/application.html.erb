@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Yurt of Mittas</title>
+  <title>Yurt of Happines</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,6 +11,10 @@
 
 <nav class="navbar navbar-inverse">
   <div class="container">
+    <div class="navbar-header">
+      <%= link_to 'Yurt-O-Happiness', root_path, class: 'navbar-brand' %>
+    </div>
+    <div class='p'><%= link_to 'Start a meditation session', new_medi_session_path %></div>
     <div id="navbar">
       <% if current_user %>
         <ul class="nav navbar-nav pull-right">
