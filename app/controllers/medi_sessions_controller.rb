@@ -5,6 +5,8 @@ class MediSessionsController < ApplicationController
   # GET /medi_sessions.json
   def index
     @medi_sessions = MediSession.all
+    @medi_session = MediSession.new
+
   end
 
   # GET /medi_sessions/1
