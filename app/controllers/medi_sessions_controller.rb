@@ -30,7 +30,7 @@ class MediSessionsController < ApplicationController
 
     respond_to do |format|
       if @medi_session.save
-        format.html { redirect_to @medi_session, notice: 'Medi session was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Medi session was successfully created.' }
         format.json { render :show, status: :created, location: @medi_session }
       else
         format.html { render :new }
