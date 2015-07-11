@@ -26,17 +26,18 @@ class MediSessionsController < ApplicationController
   # POST /medi_sessions
   # POST /medi_sessions.json
   def create
-    @medi_session = MediSession.new(medi_session_params)
 
-    respond_to do |format|
-      if @medi_session.save
-        format.html { redirect_to root_path, notice: 'Medi session was successfully created.' }
-        format.json { render :show, status: :created, location: @medi_session }
-      else
-        format.html { render :new }
-        format.json { render json: @medi_session.errors, status: :unprocessable_entity }
+      @medi_session = MediSession.new(medi_session_params)
+
+      respond_to do |format|
+        if @medi_session.save
+          format.html { redirect_to root_path, notice: 'Medi session was successfully created.' }
+          format.json { render :show, status: :created, location: @medi_session }
+        else
+          format.html { render :new }
+          format.json { render json: @medi_session.errors, status: :unprocessable_entity }
+        end
       end
-    end
   end
 
   # PATCH/PUT /medi_sessions/1

@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  user_id: MyString
+  medi_session_id: MyString
   how_sit: MyString
   before_sit: MyString
 
 two:
+  user_id: MyString
+  medi_session_id: MyString
   how_sit: MyString
   before_sit: MyString
